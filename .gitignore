@@ -1,0 +1,22 @@
+# Carpetas totales
+assets/fontawesome/svgs/
+assets/fontawesome/js/
+assets/fontawesome/less/
+assets/fontawesome/scss/
+assets/fontawesome/sprites/
+assets/fontawesome/metadata/
+# Archivos explícitos
+assets/fontawesome/css/brands.css
+assets/fontawesome/css/brands.min.css
+assets/fontawesome/css/fontawesome.css
+assets/fontawesome/css/fontawesome.min.css
+assets/fontawesome/css/regular.css
+assets/fontawesome/css/regular.min.css
+assets/fontawesome/css/solid.css
+assets/fontawesome/css/solid.min.css
+assets/fontawesome/css/svg-with-js.css
+assets/fontawesome/css/svg-with-js.min.css
+assets/fontawesome/css/v4-shims.css
+assets/fontawesome/css/v4-shims.min.css
+assets/fontawesome/attribution.js
+assets/fontawesome/LICENSE.txt
