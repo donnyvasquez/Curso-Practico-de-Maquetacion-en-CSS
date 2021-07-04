@@ -18,6 +18,7 @@ body {
     background-image: linear-gradient(to right top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb), url("https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-blend-mode: multiply;
     background-size: cover;
+    background-position: center;
 }
 
 a {
