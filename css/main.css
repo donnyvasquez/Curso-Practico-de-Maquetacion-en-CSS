@@ -83,6 +83,20 @@ main {
     place-items: center;
 }
 
+main section {
+    text-align: center;
+    color: white;
+}
+
+main section p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    line-height: 1;
+}
+
 main a {
     display: inline-block;
     border-radius: 0.5rem;
@@ -95,9 +109,9 @@ main a {
 }
 
 main a:hover {
-    color: yellow;
+    color: #00ff95;
     transform: scale(105%);
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(265deg);
     text-decoration: none;
     box-shadow: 0 2.8px 1.9px rgba(0, 0, 0, 0.02), 0 6.7px 4.7px rgba(0, 0, 0, 0.028), 0 12.5px 8.8px rgba(0, 0, 0, 0.035), 0 22.3px 15.6px rgba(0, 0, 0, 0.042), 0 41.8px 29.2px rgba(0, 0, 0, 0.05), 0 100px 70px rgba(0, 0, 0, 0.07);
     background-image: linear-gradient(to left top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
