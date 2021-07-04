@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    font-family: Lato;
+    font-size: 1rem;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
+}
+
+a {
+    text-decoration: none;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+header .navbar-top {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+header .navbar-top ul.social-links {
+    display: flex;
+    font-size: 1.25rem;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav.navbar .brand {
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+nav.navbar ul {
+    list-style: none;
+}
+
+
+/* Main layout */
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+main a {
+    display: inline-block;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+    padding: 0.5rem 1.5rem 0.75rem 1.5rem;
+    background-image: linear-gradient(to right top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
+    color: yellow;
+    font-size: 1.25rem;
+}
