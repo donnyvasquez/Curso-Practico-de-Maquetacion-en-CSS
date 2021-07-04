@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: all 0.25s ease;
 }
 
 html {
@@ -14,7 +15,9 @@ body {
     font-family: Lato;
     font-size: 1rem;
     min-height: 100vh;
-    background-image: linear-gradient(to right top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
+    background-image: linear-gradient(to right top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb), url("https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 a {
@@ -28,7 +31,6 @@ a:hover {
 }
 
 header {
-    backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
     position: sticky;
     top: 0;
@@ -59,6 +61,7 @@ nav.navbar {
     align-items: center;
     padding: 1rem;
     gap: 1rem;
+    backdrop-filter: blur(5px);
 }
 
 nav.navbar .brand {
@@ -85,6 +88,16 @@ main a {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
     padding: 0.5rem 1.5rem 0.75rem 1.5rem;
     background-image: linear-gradient(to right top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
-    color: yellow;
     font-size: 1.25rem;
+    color: white;
+    filter: hue-rotate(-180deg);
+}
+
+main a:hover {
+    color: yellow;
+    transform: scale(105%);
+    filter: hue-rotate(0deg);
+    text-decoration: none;
+    box-shadow: 0 2.8px 1.9px rgba(0, 0, 0, 0.02), 0 6.7px 4.7px rgba(0, 0, 0, 0.028), 0 12.5px 8.8px rgba(0, 0, 0, 0.035), 0 22.3px 15.6px rgba(0, 0, 0, 0.042), 0 41.8px 29.2px rgba(0, 0, 0, 0.05), 0 100px 70px rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to left top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
 }
