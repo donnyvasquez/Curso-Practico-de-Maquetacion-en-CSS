@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -31,9 +31,23 @@ a:hover {
     text-decoration: underline;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 0;
+}
+
 header {
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-    position: sticky;
     top: 0;
     z-index: 1;
     color: white;
@@ -83,18 +97,21 @@ main {
     place-items: center;
 }
 
-main section {
+.home main section {
     text-align: center;
     color: white;
 }
 
 main section p {
     font-size: 2rem;
-    margin-bottom: 4rem;
     font-weight: 300;
     text-transform: lowercase;
     font-variant: small-caps;
     line-height: 1;
+}
+
+.home section p {
+    margin-bottom: 4rem;
 }
 
 main a {
@@ -108,11 +125,107 @@ main a {
     filter: hue-rotate(-180deg);
 }
 
+.home main a:hover {
+    transform: scale(105%);
+}
+
 main a:hover {
     color: #00ff95;
-    transform: scale(105%);
     filter: hue-rotate(265deg);
     text-decoration: none;
     box-shadow: 0 2.8px 1.9px rgba(0, 0, 0, 0.02), 0 6.7px 4.7px rgba(0, 0, 0, 0.028), 0 12.5px 8.8px rgba(0, 0, 0, 0.035), 0 22.3px 15.6px rgba(0, 0, 0, 0.042), 0 41.8px 29.2px rgba(0, 0, 0, 0.05), 0 100px 70px rgba(0, 0, 0, 0.07);
     background-image: linear-gradient(to left top, #7f00fe, #9e00f9, #b700f4, #cc00f0, #df12eb);
+}
+
+main.internas {
+    display: block;
+}
+
+main.internas section p {
+    text-align: left;
+    text-transform: initial;
+    font-variant: initial;
+    font-size: 1rem;
+}
+
+.banner {
+    background-color: #8bc34a;
+    padding: 2rem 0;
+}
+
+section.banner article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.banner picture {
+    grid-column: 1 / 3;
+}
+
+picture img {
+    max-width: 100%;
+    display: block;
+}
+
+section.banner div {
+    grid-column: 3 / 5;
+}
+
+section.banner p a {
+    display: block;
+    width: max-content;
+    margin-top: 2rem;
+}
+
+section.content {
+    background-color: #f0f0f0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #b3b3b3, -20px -20px 60px #ffffff;
+    padding: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 2.8px 1.9px rgba(0, 0, 0, 0.02), 0 6.7px 4.7px rgba(0, 0, 0, 0.028), 0 12.5px 8.8px rgba(0, 0, 0, 0.035), 0 22.3px 15.6px rgba(0, 0, 0, 0.042), 0 41.8px 29.2px rgba(0, 0, 0, 0.05), 0 100px 70px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+}
+
+.card img {
+    max-width: 100%;
+    display: block;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.card a {
+    text-align: center;
+    font-weight: 300;
+}
+
+footer {
+    min-height: 4rem;
+    color: yellow;
+    text-align: left;
+}
+
+footer a {
+    color: yellow;
 }
