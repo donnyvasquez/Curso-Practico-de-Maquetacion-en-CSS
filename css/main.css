@@ -12,6 +12,7 @@ html {
 body {
     display: grid;
     grid-template-rows: auto 1fr;
+    color: #555;
     font-family: Lato;
     font-size: 1rem;
     min-height: 100vh;
@@ -19,6 +20,7 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 a {
@@ -107,7 +109,11 @@ main section p {
     font-weight: 300;
     text-transform: lowercase;
     font-variant: small-caps;
-    line-height: 1;
+    line-height: 1.6;
+}
+
+.home main section p {
+    line-height: 1.1;
 }
 
 .home section p {
@@ -150,7 +156,6 @@ main.internas section p {
 
 .banner {
     background-color: #8bc34a;
-    padding: 2rem 0;
 }
 
 section.banner article {
@@ -220,12 +225,45 @@ section.content {
     font-weight: 300;
 }
 
+.blog main article.card img {
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+}
+
+.serction-container {
+    margin-top: 3rem;
+    box-shadow: 0 2.8px 1.9px rgb(0 0 0 / 2%), 0 6.7px 4.7px rgb(0 0 0 / 3%), 0 12.5px 8.8px rgb(0 0 0 / 4%), 0 22.3px 15.6px rgb(0 0 0 / 4%), 0 41.8px 29.2px rgb(0 0 0 / 5%), 0 100px 70px rgb(0 0 0 / 7%);
+    display: grid;
+}
+
+.serction-container.prefooter {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.serction-container.prefooter section {
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 300;
+}
+
+.serction-container.prefooter img {
+    max-height: 40px;
+}
+
+.serction-container.prefooter img,
+.serction-container.prefooter a {
+    font-weight: bold;
+}
+
 footer {
     min-height: 4rem;
-    color: yellow;
+    color: white;
+    font-size: 0.85rem;
     text-align: left;
 }
 
 footer a {
     color: yellow;
+    font-size: 1rem;
 }
