@@ -114,6 +114,7 @@ main section p {
 
 .home main section p {
     line-height: 1.1;
+    text-shadow: 0px 2px 5px #000000;
 }
 
 .home section p {
@@ -155,7 +156,7 @@ main.internas section p {
 }
 
 .banner {
-    background-color: #8bc34a;
+    background-color: white;
 }
 
 section.banner article {
@@ -166,6 +167,18 @@ section.banner article {
 
 .banner picture {
     grid-column: 1 / 3;
+}
+
+.profile .banner picture {
+    grid-column: 1 / 2;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+}
+
+.profile section.banner div {
+    grid-column: 2 / 4;
+    align-self: center;
 }
 
 picture img {
